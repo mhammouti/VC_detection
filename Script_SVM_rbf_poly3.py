@@ -33,7 +33,7 @@ rocs='\\path\\...'
 #Directory path to load RO-VC profiles
 rocl='\\path\\...'
 
-#Total number of RO profiles
+#Total number of RO profiles (i.e. RO-VC or RO-AB profiles)
 n_pr='number' 
 
 #Directory path to save results
