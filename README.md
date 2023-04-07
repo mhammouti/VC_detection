@@ -1,5 +1,4 @@
-# VC_detection
-The code is based on the use of Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
+The code developed to train the Support Vector Machine algorithm in order to classify clouds and distinguish volcanic clouds from other types is based on the use of the Scikit-learn library (Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011).
 
 # Packager 
 pip/conda
