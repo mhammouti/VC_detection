@@ -33,7 +33,7 @@ rocs='\\path\\...'
 #Directory path to load RO-VC profiles
 rocl='\\path\\...'
 
-#Total number of RO profiles
+#Total number of RO profiles (i.e. RO-VC or RO-AB profiles)
 n_pr='number' 
 
 #Directory path to save results
@@ -100,7 +100,7 @@ print('acc_test set',score_test)
 score_train=modelrbf.score(X_train, y_train)
 print('acc_train set',score_train)
  
-#Compute confusion matrix and classification report from test subset
+#Compute confusion matrix and classification report on test subset
  
 y_pred4 = modelrbf.predict(X_test)
 cm = confusion_matrix(y_test, y_pred4)
@@ -109,7 +109,7 @@ print('confusion_matrix_test',cm)
 classification_rep4=classification_report(y_test, y_pred4)
 print('classification_report_test',classification_rep4)
  
-#Compute confusion matrix from train subset
+#Compute confusion matrix on train subset
  
 x_pred4 = modelrbf.predict(X_train)
 cm_train = confusion_matrix(y_train, x_pred4)
@@ -128,7 +128,7 @@ tp1=cm_train[1,1]
 fp1=cm_train[0,1]
 fn1=cm_train[1,0]
 
-#Save some results (e.g. to an Excel file)
+#Save results to an Excel file (e.g.confusion matrix parameters and accuracy)
 arr_rbf=[C_par,Gamma_par,score_test,tp,tn,fp,fn,score_train,tp1,tn1,fp1,fn1]
 data=[arr_rbf] 
 df = pd.DataFrame(data)
