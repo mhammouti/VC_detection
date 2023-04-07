@@ -2,7 +2,7 @@
 """
 @author: mohammed.hammouti@igag.cnr.it
 
-This script is mainly based on Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
+This script is mainly based on Scikit-learn library (Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011).
 """
 
 
